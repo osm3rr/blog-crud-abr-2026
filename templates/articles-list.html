@@ -1,0 +1,10 @@
+{% extends "_base.html" %}
+
+{% block content %}
+    <h2>Lista de articulos</h2>
+    <ul>
+        {% for publication in article_list %}
+            <li>{{ publication.title }} - {{ publication.author }}</li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
